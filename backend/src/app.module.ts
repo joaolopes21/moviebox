@@ -17,4 +17,4 @@ import { AuthController } from './auth/auth.controller';
   providers: [FavoritesService, AuthService],
   controllers: [AuthController],
 })
-export class AppModule { }
+export class AppModule {}
