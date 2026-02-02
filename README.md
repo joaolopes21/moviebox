@@ -4,7 +4,6 @@ MovieBox é uma aplicação web completa que permite aos usuários explorar um c
 ver detalhes e gerenciar uma lista pessoal de favoritos. O projeto foi desenvolvido, utilizando NestJS para o backend
 e Vue 3 para o frontend.
 
-
 # Tecnologias Utilizadas
 
 **Backend**: NestJS, Prisma, SQLite, bcrypt, Axios  
@@ -12,32 +11,9 @@ e Vue 3 para o frontend.
 **Testes**: Jest
 **Container**: Docker
 
-
 # Estrutura do Projeto
 
-/moviebox
-├── backend/ # Aplicação Backend (NestJS)
-│ ├── prisma/ # Schema e migrações do banco de dados
-│ ├── src/
-│ │ ├── auth/ # Módulo de autenticação (cadastro/login)
-│ │ ├── favorites/ # Módulo de gerenciamento de favoritos
-│ │ ├── movies/ # Módulo de integração com TMDb
-│ │ └── ...
-│ ├── test/ # Testes automatizados (Jest)
-│ ├── .env # Variáveis de ambiente
-│ └── Dockerfile # Configuração do container do backend
-│
-├── frontend/ # Aplicação Frontend (Vue 3)
-│ ├── src/
-│ │ ├── components/ # Componentes reutilizáveis
-│ │ ├── views/ # Páginas da aplicação
-│ │ ├── services/ # Camada de comunicação com a API
-│ │ ├── stores/ # Stores de estado (Pinia)
-│ │ └── ...
-│ └── Dockerfile # Configuração do container do frontend
-│
-└── docker-compose.yml # Orquestração dos serviços (backend + frontend)
-
+Disponível em [ProjectTree.md](./ProjectTree.md)
 
 # Como executar (com Docker):
 
@@ -47,7 +23,6 @@ e Vue 3 para o frontend.
 4. Em um novo terminal, execute a migração do banco de dados com:
    `docker compose exec backend npx prisma migrate dev --name init`
 5. Acesse a aplicação frontend em `http://localhost:5173`.
-
 
 # Como executar (sem Docker):
 
@@ -59,7 +34,6 @@ e Vue 3 para o frontend.
 6. Navegue até a pasta `frontend` e instale as dependências com `npm install`.
 7. Inicie o servidor frontend com `npm run dev`.
 8. Acesse a aplicação frontend em `http://localhost:5173`.
-
 
 # Testes
 
